@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  imports = [ ./_desktop.nix ];
+  imports = [ ./_desktop.nix ./_noctalia.nix ];
 
   home.username = "gregory";
   home.homeDirectory = "/home/gregory";
