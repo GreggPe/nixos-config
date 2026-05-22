@@ -1,0 +1,73 @@
+// ===== ENTRÉES (clavier, souris, touchpad) =====
+input {
+    keyboard {
+        xkb {
+            layout "ch"
+            variant "fr"
+        }
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+}
+
+// ===== SORTIE ÉCRAN (dalle 4K du XPS → scale 2x) =====
+output "eDP-1" {
+    mode "3840x2160@60.000"
+    scale 2.0
+}
+
+// ===== RACCOURCIS =====
+binds {
+    // Terminal (Foot) et launcher (fuzzel)
+    Mod+T { spawn "foot"; }
+    Mod+D { spawn "fuzzel"; }
+
+    // Fermer la fenêtre active
+    Mod+Q { close-window; }
+
+    // Quitter Niri
+    Mod+Shift+E { quit; }
+
+    // Navigation entre fenêtres
+    Mod+Left  { focus-column-left; }
+    Mod+Right { focus-column-right; }
+    Mod+Up    { focus-window-up; }
+    Mod+Down  { focus-window-down; }
+
+    // Déplacer les fenêtres
+    Mod+Shift+Left  { move-column-left; }
+    Mod+Shift+Right { move-column-right; }
+
+    // Plein écran et maximisation
+    Mod+F { maximize-column; }
+    Mod+Shift+F { fullscreen-window; }
+
+    // Workspaces
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+
+    // Capture d'écran
+    Print { screenshot; }
+
+    // Volume (touches multimédia)
+    XF86AudioRaiseVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
+    XF86AudioLowerVolume { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
+    XF86AudioMute        { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+
+    // Luminosité
+    XF86MonBrightnessUp   { spawn "brightnessctl" "set" "5%+"; }
+    XF86MonBrightnessDown { spawn "brightnessctl" "set" "5%-"; }
+}
+
+// ===== APPARENCE =====
+layout {
+    gaps 8
+    border {
+        width 2
+    }
+}
