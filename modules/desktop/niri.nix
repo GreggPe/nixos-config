@@ -21,6 +21,7 @@
       brightnessctl   # contrôle luminosité
       grim            # captures d'écran
       slurp           # sélection de zone pour captures
+      adwaita-icon-theme
     ];
   };
 }
