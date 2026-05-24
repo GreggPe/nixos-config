@@ -27,6 +27,8 @@
       config.flake.modules.nixos.desktop-niri
       config.flake.modules.nixos.desktop-sddm
       config.flake.modules.nixos.system-agenix
+      config.flake.modules.nixos.system-unfree
+      config.flake.modules.nixos.pentest-tools
     ];
   };
 }
