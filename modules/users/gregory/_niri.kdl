@@ -38,8 +38,8 @@ cursor {
 }
 
 // ===== DÉMARRAGE AUTO =====
-spawn-at-startup "vesktop"
 spawn-at-startup "noctalia-shell"
+spawn-at-startup "vesktop"
 
 // ===== LAYOUT =====
 layout {
