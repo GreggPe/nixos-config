@@ -3,6 +3,7 @@
   # Pose la config Niri au bon endroit
   xdg.configFile."niri/config.kdl".source = ./_niri.kdl;
 
+  programs.fastfetch.enable = true;
   # tmux (ton multiplexeur, le vrai outil pentest)
   programs.tmux = {
     enable = true;
@@ -16,7 +17,7 @@
     enable = true;
     settings = {
       main = {
-        font = "monospace:size=11";
+        font = "JetBrainsMono Nerd Font:size=11";
         pad = "8x8";
       };
     };

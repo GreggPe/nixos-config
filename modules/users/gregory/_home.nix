@@ -11,6 +11,7 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+    initContent = "fastfetch";
   };
   programs.starship.enable = true;
   # Git (config de base — adapte le nom/email si besoin)

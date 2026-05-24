@@ -35,6 +35,7 @@
       config.flake.modules.nixos.system-overlays
       config.flake.modules.nixos.system-snapshots
       config.flake.modules.nixos.system-power
+      config.flake.modules.nixos.system-fonts
     ];
   };
 }
