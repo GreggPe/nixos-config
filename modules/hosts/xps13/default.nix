@@ -29,6 +29,8 @@
       config.flake.modules.nixos.system-agenix
       config.flake.modules.nixos.system-unfree
       config.flake.modules.nixos.pentest-tools
+      config.flake.modules.nixos.desktop-apps
+      config.flake.modules.nixos.system-tailscale
     ];
   };
 }
