@@ -2,6 +2,11 @@
 prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
+// ===== ENVIRONNEMENT (XWayland) =====
+environment {
+    DISPLAY ":0"
+}
+
 // ===== ENTRÉES (préservé XPS : clavier ch_fr) =====
 input {
     keyboard {
@@ -33,6 +38,7 @@ cursor {
 }
 
 // ===== DÉMARRAGE AUTO =====
+spawn-at-startup "vesktop"
 spawn-at-startup "noctalia-shell"
 
 // ===== LAYOUT =====
