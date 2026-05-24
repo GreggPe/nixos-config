@@ -26,6 +26,7 @@
       config.flake.modules.nixos.user-gregory
       config.flake.modules.nixos.desktop-niri
       config.flake.modules.nixos.desktop-sddm
+      config.flake.modules.nixos.system-agenix
     ];
   };
 }
