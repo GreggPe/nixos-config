@@ -5,6 +5,8 @@
       builtins.elem (lib.getName pkg) [
         "burpsuite"
         "obsidian"
+        "steam"
+        "steam-unwrapped"
       ];
   };
 }

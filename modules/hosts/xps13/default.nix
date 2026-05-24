@@ -31,6 +31,8 @@
       config.flake.modules.nixos.pentest-tools
       config.flake.modules.nixos.desktop-apps
       config.flake.modules.nixos.system-tailscale
+      config.flake.modules.nixos.gaming
+      config.flake.modules.nixos.system-overlays
     ];
   };
 }
