@@ -34,6 +34,7 @@
       config.flake.modules.nixos.gaming
       config.flake.modules.nixos.system-overlays
       config.flake.modules.nixos.system-snapshots
+      config.flake.modules.nixos.system-power
     ];
   };
 }
